@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.faq-item').forEach(item => {
 
   const button =
