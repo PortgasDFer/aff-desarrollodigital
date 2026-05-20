@@ -999,3 +999,376 @@ footer {
   font-size: 0.95rem;
 }
 
+
+/* =========================================
+   MOBILE OPTIMIZATION
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* =========================
+     GENERAL
+  ========================= */
+
+  section {
+    padding: 4.5rem 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .bg-glow {
+
+    opacity: 0.45;
+
+    filter: blur(180px);
+  }
+
+  /* =========================
+     NAVBAR
+  ========================= */
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .logo p {
+    font-size: 0.7rem;
+  }
+
+  .menu-toggle {
+    display: block;
+
+    z-index: 10001;
+  }
+
+  .nav-links {
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1.5rem 0;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1.2rem;
+
+    background: var(--surface);
+
+    border:
+      1px solid var(--border);
+
+    border-radius:
+      0 0 24px 24px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+      translateY(-10px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .nav-links.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+      translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+
+    min-height: auto;
+
+    padding:
+      7rem 0 4rem;
+  }
+
+  .hero-content {
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding-top: 2rem;
+  }
+
+  .tag {
+
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h2 {
+
+    font-size: 2.8rem;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+
+    margin-top: 1.3rem;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+
+    margin-top: 2rem;
+
+    gap: 0.8rem;
+  }
+
+  .btn,
+  .btn-secondary {
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  /* =========================
+     VANTA
+  ========================= */
+
+  #hero canvas {
+
+    opacity: 0.38 !important;
+  }
+
+  /* =========================
+     DASHBOARD
+  ========================= */
+
+  .dashboard {
+
+    transform:
+      scale(0.82);
+
+    transform-origin:
+      top center;
+
+    margin-top: -2rem;
+  }
+
+  .dashboard-content {
+    padding: 1.5rem;
+  }
+
+  .hero-card {
+
+    height: 180px;
+
+    padding: 1.5rem;
+  }
+
+  .hero-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+
+    grid-template-columns: 1fr;
+
+    gap: 0.8rem;
+  }
+
+  .stat {
+
+    padding: 1.2rem;
+  }
+
+  .stat h4 {
+    font-size: 1.5rem;
+  }
+
+  /* =========================
+     SECTION TITLES
+  ========================= */
+
+  .section-top {
+
+    margin-bottom: 2.5rem;
+  }
+
+  .section-top h3 {
+
+    font-size: 2.3rem;
+
+    line-height: 1.05;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .services-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+
+    padding: 1.6rem;
+  }
+
+  /* =========================
+     PROJECTS
+  ========================= */
+
+  .projects {
+
+    gap: 4rem;
+  }
+
+  .project {
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .project-preview {
+
+    height: 260px;
+  }
+
+  .project-ui {
+
+    padding: 1.5rem;
+  }
+
+  .project-square {
+
+    width: 72px;
+    height: 72px;
+  }
+
+  .pill {
+
+    font-size: 0.72rem;
+  }
+
+  .mini-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 0.8rem;
+  }
+
+  .mini-box {
+
+    height: 58px;
+
+    font-size: 0.9rem;
+  }
+
+  .project-content h4 {
+
+    font-size: 2rem;
+  }
+
+  .project-content p {
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+  .project-content a {
+
+    margin-top: 1.5rem;
+  }
+
+  /* =========================
+     CTA
+  ========================= */
+
+  .cta-box {
+
+    padding:
+      3rem 1.5rem;
+
+    border-radius: 28px;
+  }
+
+  .cta-content h3 {
+
+    font-size: 2.5rem;
+
+    line-height: 1;
+  }
+
+  .cta-content p {
+
+    font-size: 1rem;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  footer {
+
+    margin-top: 6rem;
+
+    padding:
+      4rem 0 2rem;
+  }
+
+  .footer-content {
+
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+  }
+
+  .footer-brand h3 {
+
+    font-size: 1.6rem;
+  }
+
+  .footer-links {
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+
+    margin-top: 3rem;
+  }
+
+}
+
